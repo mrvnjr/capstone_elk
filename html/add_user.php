@@ -18,8 +18,8 @@
                     <div class="form-group">
                       <input class="form-control" name="password" type="text" placeholder = "Password" required>
                     </div>
-                    <div class="form-group">
-                    <button name="save" id="save" class="btn btn-primary" ><i class="fas fa-plus"></i></button>
+                    <div class="form-group text-center">
+                    <button name="save" id="save" class="btn btn-success btn-block" ><i class="fas fa-plus"></i></button>
                     </div>
                 </form>
             </div>
