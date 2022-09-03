@@ -121,20 +121,25 @@
 					</div>
 					
 					
-					
-					<!-- Content delete modal -->
-					<div id="subject_delete" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-					<h3 id="myModalLabel">Delete Subject?</h3>
-					</div>
-					<div class="modal-body">
-					<div class="alert alert-danger">
-					<p>Are you sure you want to delete the subject you check?.</p>
-					</div>
-					</div>
-					<div class="modal-footer">
-					<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove icon-large"></i> Close</button>
-					<button name="delete_subject" class="btn btn-danger"><i class="icon-check icon-large"></i> Yes</button>
-					</div>
-					</div>
+									<!-- subject delete modal -->
+<div id="subject_delete" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="myModalLabel" class="modal-title">Delete Subject?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div class="modal-body">
+	  	<div class="alert alert-danger">
+        	<p>Are you sure you want to delete the subject you check?</p>
+		</div>
+	</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button name="delete_subject" class="btn btn-danger">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>

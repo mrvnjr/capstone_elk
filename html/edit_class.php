@@ -28,7 +28,8 @@
 									<thead>
 										  <tr>
 													<th></th>
-													<th>Grade Level And Section</th>
+													<th>Grade Level</th>
+                                                    <th>Section</th>
 													<th></th>
 										   </tr>
 										</thead>
@@ -43,7 +44,8 @@
 											<td width="30">
 											<input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
 											</td>
-											<td><?php echo $class_row['grade_level']; ?> <?php echo $class_row['class_name']; ?></td>
+											<td><?php echo $class_row['grade_level']; ?></td>
+                                            <td><?php echo $class_row['class_name']; ?></td>
 											<td width="40"><a href="edit_class.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="fas fa-edit"></i> </a></td>
                                      
                                
