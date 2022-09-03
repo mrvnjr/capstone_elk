@@ -25,8 +25,6 @@ if(isset($_POST['username'])){
 	exit;
 }
 
-include 'config.php';
-
 if(isset($_POST['usrname'])){
 	$usrname = $_POST['usrname'];
 
