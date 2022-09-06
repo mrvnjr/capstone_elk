@@ -15,9 +15,6 @@
                     <div class="form-group">
                       <input class="form-control" name="username" type="text" placeholder = "Username" required>
                     </div>
-                    <div class="form-group">
-                      <input class="form-control" name="password" type="text" placeholder = "Password" required>
-                    </div>
                     <div class="form-group text-center">
                     <button name="save" id="save" class="btn btn-success btn-block" ><i class="fas fa-plus"></i></button>
                     </div>
@@ -31,7 +28,7 @@
                 $firstname = $_POST['firstname'];
                 $lastname = $_POST['lastname'];
                 $username = $_POST['username'];
-                $password = $_POST['password'];
+           
                 
                 $query = mysqli_query($conn,"select * from teacher where firstname = '$firstname' and lastname = '$lastname' ")or die(mysqli_error());
                 $count = mysqli_num_rows($query);
@@ -43,8 +40,8 @@
                     <?php
                 }else{
 
-                mysqli_query($conn,"insert into teacher (firstname,lastname,username, password,location)
-                values ('$firstname','$lastname','$username','$password','uploads/NO-IMAGE-AVAILABLE.jpg')         
+                mysqli_query($conn,"insert into teacher (firstname,lastname,username,location)
+                values ('$firstname','$lastname','$username','uploads/NO-IMAGE-AVAILABLE.jpg')         
                 ") or die(mysqli_error()); ?>
             <script>
                 window.location = "teachers.php"; 
