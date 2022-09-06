@@ -19,11 +19,11 @@
                                 <div class="card-header">
                                     <div class="easion-card-title">Admin Users List</div>
                                 </div>
-                                    <div class="card-body">
+                                    <div class="card-body ">
                                         <div class="">
                                         <form action="delete_users.php" method="post">
                                             <table class="table table-in-card" id="example">
-                                                <a data-toggle="modal" href="#user_delete" id="delete"  class="btn btn-danger" name=""><i class="fas fa-trash-alt"></i></a>
+                                                <a data-toggle="modal" href="#user_delete" id="delete"  class="btn btn-danger mb-3" name=""><i class="fas fa-trash-alt"></i></a>
                                                     <?php include('modal_delete.php'); ?>
                                                 <thead>
                                                     <tr>
