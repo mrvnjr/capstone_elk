@@ -8,6 +8,7 @@
             </header>
             <main class="dash-content">
                 <div class="container-fluid">
+                    <h1>Dashboard</h1>
                     <div class="row dash-row">
                         <div class="col-xl-4">
                             <div class="stats stats-primary">
