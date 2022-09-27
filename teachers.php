@@ -1,13 +1,14 @@
 <?php include('header.php');?>
 <body>
 <div class="dash">  
-    <?php include('admin_sidebar.php'); ?>      
+    <?php include('teacher_sidebar.php'); ?>      
     <div class="dash-app">
             <header class="dash-toolbar">
                 <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
             </header>
             <main class="dash-content">
                 <div class="container-fluid">
+                <h1>Teachers</h1>
                     <div class="row">
                         <div class="col-lg-4" id="adduser">
                             <?php include('add_teacher.php'); ?>
@@ -15,7 +16,7 @@
                         <div class="col-lg-8" id="">
                             <!--card-->
                             <div id="block_bg" class="card easion-card">
-                                <div class="card-header">
+                                <di v class="card-header">
                                     <div class="easion-card-title">Teacher List</div>
                                 </div>
                                     <div class="card-body">

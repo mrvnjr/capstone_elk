@@ -1,7 +1,7 @@
 <?php include('header.php');?>
 <body>
 <div class="dash">  
-    <?php include('admin_sidebar.php'); ?>      
+    <?php include('student_sidebar.php'); ?>      
     <div class="dash-app">
             <header class="dash-toolbar">
                 <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>

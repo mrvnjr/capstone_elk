@@ -11,19 +11,19 @@
                     <i class="fas fa-home"></i> Dashboard 
                 </a> 
             </div>
-            <div class="border-top">
+            <div class="border-top ">
                 <a href="students.php"class="dash-nav-item text-white">
                     <i class="fas fa-users"></i>Students
                 </a>
             </div>
-            <div class="border-top">
+            <div class="border-top ">
                 <a href="teachers.php"class="dash-nav-item text-white">
                     <i class="fas fa-users"></i>Teachers
                 </a>
             </div>
         
-            <div class="border-top bg-light">
-                <a href="admin_user.php"class="dash-nav-item text-success">
+            <div class="border-top ">
+                <a href="admin_user.php"class="dash-nav-item text-white">
                     <i class="fas fa-user-cog"></i>Admin Users
                 </a>
             </div>
@@ -37,8 +37,8 @@
                     <i class="fas fa-plus-circle"></i> Section
                 </a>
             </div> 
-            <div class="border-top">
-                <a href="school_year.php"class="dash-nav-item text-white">
+            <div class="border-top bg-light">
+                <a href="school_year.php"class="dash-nav-item text-success">
                     <i class="fas fas fa-calendar-alt"></i>School Year
                 </a>
             </div>
