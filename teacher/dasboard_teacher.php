@@ -8,6 +8,7 @@
                 <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
             </header>
             <main class="dash-content">
+				<h1>My Class</h1>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-8" id=" ">

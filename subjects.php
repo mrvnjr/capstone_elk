@@ -1,19 +1,21 @@
 <?php include('header.php');?>
 <body>
 <div class="dash">  
-    <?php include('admin_sidebar.php'); ?>      
+    <?php include('subject_sidebar.php'); ?>      
     <div class="dash-app">
             <header class="dash-toolbar">
                 <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
             </header>
             <main class="dash-content">
                 <div class="container-fluid">
+					<h1>Subjects</h1>
+						<div class="text-right">
+							<a href="add_subject.php" class="btn btn-success"><i class="icon-plus-sign icon-large"></i> Add Subject</a>
+						</div>
                     <div class="row">
-						
+					
                         <div class="col-lg-12" id="">
-							<div>
-								<a href="add_subject.php" class="btn btn-success"><i class="icon-plus-sign icon-large"></i> Add Subject</a>
-							</div>
+							
 								<!--card-->
                             <div id="block_bg" class="card easion-card mt-3">
                                 <div class="card-header">
