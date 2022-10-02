@@ -16,7 +16,7 @@
                         <div class="col-lg-8" id="">
                             <!--card-->
                             <div id="block_bg" class="card easion-card">
-                                <di v class="card-header">
+                                <div class="card-header">
                                     <div class="easion-card-title">Teacher List</div>
                                 </div>
                                     <div class="card-body">

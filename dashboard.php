@@ -1,4 +1,6 @@
 <?php include('header.php');?>
+<?php  include('session.php'); ?>
+
 <body>
 <div class="dash">  
     <?php include('dashboard_sidebar.php'); ?>      
