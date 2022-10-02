@@ -3,12 +3,12 @@
 <div class="dash">  
     <?php include('admin_sidebar.php'); ?>      
     <div class="dash-app">
-            <header class="dash-toolbar bg-success tex">
+            <header class="dash-toolbar ">
                 <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
-                <div class="font-weight-bold text-white">Anselmo A. Sandoval Memorial National High School</div>
             </header>
             <main class="dash-content">
                 <div class="container-fluid">
+                    <h1 class="dash-title">Admin User</h1>
                     <div class="row">
                         <div class="col-lg-4" id="adduser">
                             <?php include('add_user.php'); ?>

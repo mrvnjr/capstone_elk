@@ -1,14 +1,14 @@
 <?php include('header.php');?>
 <body>
 <div class="dash">  
-    <?php include('admin_sidebar.php'); ?>      
+    <?php include('sy_sidebar.php'); ?>      
     <div class="dash-app">
-            <header class="dash-toolbar bg-success tex">
+            <header class="dash-toolbar ">
                 <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
-                <div class="font-weight-bold text-white">Anselmo A. Sandoval Memorial National High School</div>
             </header>
             <main class="dash-content">
                 <div class="container-fluid">
+					<h1>School Year</h1>
                     <div class="row">
                         <div class="col-lg-4" id="adduser">
 						<?php include('add_school_year.php'); ?>
@@ -23,7 +23,7 @@
                                         <div class="">
                                         <form action="delete_sy.php" method="post">
 											<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-											<a data-toggle="modal" href="#user_delete" id="delete"  class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+											<a data-toggle="modal" href="#user_delete" id="delete"  class="btn btn-danger mb-3" name=""><i class="fas fa-trash-alt"></i></a>
 											<?php include('modal_delete.php'); ?>
 												<thead>
 												<tr>
@@ -48,7 +48,7 @@
 														
 													
 														<td width="40">
-														<a href="edit_user.php<?php echo '?id='.$id; ?>"  data-toggle="modal" class="btn btn-success"><i class="icon-pencil icon-large"></i></a>
+														<a href="edit_user.php<?php echo '?id='.$id; ?>"  data-toggle="modal" class="btn btn-success"><i class="fas fa-edit"></i> </a>
 														</td>
 				
 											
