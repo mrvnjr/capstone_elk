@@ -33,8 +33,8 @@
             </div>
         </div>
 					
-			<script>
-			jQuery(document).ready(function($){
+			<script type='text/javascript'>
+			$(document).ready(function($){
 				$("#add_student").submit(function(e){
 					e.preventDefault();
 					var _this = $(e.target);
@@ -44,17 +44,22 @@
 						url: "save_student.php",
 						data: formData,
 						success: function(html){
-							$.jGrowl("Student Successfully  Added", { header: 'Student Added' });
-							$('#studentTableDiv').load('student_table.php', function(response){
-								$("#studentTableDiv").html(response);
-								$('#example').dataTable( {
-									
-									
-								} );
-								$(_this).find(":input").val('');
-								$(_this).find('select option').attr('selected',false);
-								$(_this).find('select option:first').attr('selected',true);
-							});
+							if (html=='true') {
+									$.jGrowl("Student Successfully  Added", { header: 'Student Added' });
+									$('#studentTableDiv').load('student_table.php', function(response){
+									$("#studentTableDiv").html(response);
+									$('#example').dataTable( {
+										
+										
+									} );
+									$(_this).find(":input").val('');
+									$(_this).find('select option').attr('selected',false);
+									$(_this).find('select option:first').attr('selected',true);
+								});
+							} else {
+								$.jGrowl("Please Check your inputs", { header: 'Adding Failed' });
+							}
+							
 						}
 					});
 				});

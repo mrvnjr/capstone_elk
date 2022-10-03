@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="./css/easion.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.4.8/jquery.jgrowl.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.4.8/jquery.jgrowl.min.css" />
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
     <script src="./js/chart-js-config.js"></script>
     <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
-    
-
+   
     <title>Elk</title>
 </head>
 <?php include('dbcon.php'); ?>
