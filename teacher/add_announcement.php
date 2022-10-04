@@ -1,5 +1,5 @@
 <?php include('header_dashboard.php'); ?>
-<!--?php include('session.php'); ?-->
+<?php  include('session.php'); ?>
 <body>
 <div class="dash">  
 	<?php include('teacher_sidebar.php'); ?>    
@@ -8,7 +8,7 @@
                 <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
             </header>
             <main class="dash-content">
-				<h1>Add Announcement</h1>
+	sss			<h1>Add Announcement</h1>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-9" id=" ">

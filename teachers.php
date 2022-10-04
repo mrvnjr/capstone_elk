@@ -1,11 +1,13 @@
 <?php include('header.php');?>
+<?php  include('session.php'); ?>
 <body>
 <div class="dash">  
     <?php include('teacher_sidebar.php'); ?>      
     <div class="dash-app">
-            <header class="dash-toolbar">
-                <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
-            </header>
+        <header class="dash-toolbar ">
+                <!-- <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a> -->
+            <?php include('navbar.php');?>
+        </header>
             <main class="dash-content">
                 <div class="container-fluid">
                 <h1>Teachers</h1>

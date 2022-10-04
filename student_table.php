@@ -2,16 +2,16 @@
 	<form action="delete_student.php" method="post">
 		<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
 			<a data-toggle="modal" href="#student_delete" id="delete"  class="btn btn-danger" name=""><i class="fas fa-trash-alt"></i></a>
-				<div class="navbar navbar-expand-lg">
+				<div class="navbar navbar-expand-lg ">
 					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link"href="students.php">All</a>
+						<li class="nav-item bg-success">
+							<a class="nav-link text-white"href="students.php">All</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="unreg_students.php">Unregistered</a>
 						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="reg_students.php">Registered</a>
+						<li class="nav-item ">
+							<a class="nav-link " href="reg_students.php">Registered</a>
 						</li>
 					</ul>
 				</div>

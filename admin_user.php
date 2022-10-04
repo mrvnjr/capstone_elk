@@ -1,10 +1,12 @@
 <?php include('header.php');?>
+<?php  include('session.php'); ?>
 <body>
 <div class="dash">  
     <?php include('admin_sidebar.php'); ?>      
     <div class="dash-app">
             <header class="dash-toolbar ">
-                <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
+                <!-- <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a> -->
+                <?php include('navbar.php');?>
             </header>
             <main class="dash-content">
                 <div class="container-fluid">
@@ -13,7 +15,7 @@
                         <div class="col-lg-4" id="adduser">
                             <?php include('add_user.php'); ?>
                         </div>
-                       <div class="col-lg-8" id="">
+                        <div class="col-lg-8" id="">
                             <!--card-->
                             <div id="block_bg" class="card easion-card">
                                 <div class="card-header">
