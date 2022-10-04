@@ -12,9 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="./css/easion.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.4.8/jquery.jgrowl.min.css" />
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.4.8/jquery.jgrowl.min.css" />
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.4.8/jquery.jgrowl.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.4.8/jquery.jgrowl.css" integrity="sha512-bJUzQNnX8ns5wfU5evv67e9ILktl3dr6xQlwWUhB743gV5dZgOOvhnTg7l8LH/8noxBLctysfkz2e9nH5QDg+g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
     <script src="./js/chart-js-config.js"></script>

@@ -34,7 +34,7 @@
 									});
 									</script>
                        <div class="col-lg-4" id="">
-					  		<?php include('add_class.php'); ?>	
+					  		<?php include('teacher_right_sidebar.php'); ?>	
                         </div>                                  
                     </div>
                 </div>

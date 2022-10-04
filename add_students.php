@@ -33,30 +33,33 @@
             </div>
         </div>
 					
-			<script>
-			jQuery(document).ready(function($){
-				$("#add_student").submit(function(e){
-					e.preventDefault();
-					var _this = $(e.target);
-					var formData = $(this).serialize();
-					$.ajax({
-						type: "POST",
-						url: "save_student.php",
-						data: formData,
-						success: function(html){
-							$.jGrowl("Student Successfully  Added", { header: 'Student Added' });
-							$('#studentTableDiv').load('student_table.php', function(response){
-								$("#studentTableDiv").html(response);
-								$('#example').dataTable( {
-									
-									
-								} );
-								$(_this).find(":input").val('');
-								$(_this).find('select option').attr('selected',false);
-								$(_this).find('select option:first').attr('selected',true);
-							});
-						}
+			<script type='text/javascript'>
+				jQuery(document).ready(function($){
+					$("#add_student").submit(function(e){
+						e.preventDefault();
+						var _this = $(e.target);
+						var formData = $(this).serialize();
+						$.ajax({
+							type: "POST",
+							url: "save_student.php",
+							data: formData,
+							success: function(html){
+								$.jGrowl("Student Successfully  Added", { header: 'Student Added' });
+								$('#studentTableDiv').load('student_table.php', function(response){
+									$("#studentTableDiv").html(response);
+									$('#example').dataTable( {
+										"sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+										"sPaginationType": "bootstrap",
+										"oLanguage": {
+											"sLengthMenu": "_MENU_ records per page"
+										}
+									} );
+									$(_this).find(":input").val('');
+									$(_this).find('select option').attr('selected',false);
+									$(_this).find('select option:first').attr('selected',true);
+								});
+							}
+						});
 					});
 				});
-			});
 			</script>		
