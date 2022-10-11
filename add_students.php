@@ -27,7 +27,7 @@
                       <input class="form-control" name="ln" type="text" placeholder = "Last Name" required>
                     </div>
                     <div class="form-group text-center">
-                    <button name="save" id="save" class="btn btn-success btn-block" ><i class="fas fa-plus"></i></button>
+                    	<button name="save" id="save" class="btn btn-success btn-block" ><i class="fas fa-plus"></i></button>
                     </div>
                 </form>
             </div>
@@ -49,13 +49,13 @@
 									$('#studentTableDiv').html(response);
 									$('#example').dataTable( {
 										dom: "<'row'<'col-6'l><'col-6'f>r>t<'row'<'col-6'i><'col-6'p>>",
-										PaginationType: "bootstrap",
+										Pagination: "bootstrap",
 										oLanguage: {
 											lengthMenu: [[5,10,25,50, -1], [5,10,25,50, "All"]],
 										}
 									} );
 									$(_this).find(":input").val('');
-									$(_this).find('select option').attr('selected',false);
+									$(_this).find('select option').attr('selected',true);
 									$(_this).find('select option:first').attr('selected',true);
 								});
 							}
