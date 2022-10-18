@@ -6,13 +6,13 @@
     </header>
     <nav class="dash-nav-list bg-success">
         
-            <div class="bg-light"> 
-                <a href="dasboard_teacher.php" class="dash-nav-item text-success">
+            <div class=""> 
+                <a href="dasboard_teacher.php" class="dash-nav-item text-white">
                     <i class="fas fa-home"></i> My Class 
                 </a> 
             </div>
-            <div class="border-top">
-                <a href="notification_teacher.php"class="dash-nav-item text-white">
+            <div class="border-top bg-light">
+                <a href="notification_teacher.php"class="dash-nav-item text-success">
                     <i class="fas fa-users"></i>Notification
                 </a>
             </div>

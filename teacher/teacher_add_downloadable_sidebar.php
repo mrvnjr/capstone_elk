@@ -6,8 +6,8 @@
     </header>
     <nav class="dash-nav-list bg-success">
         
-            <div class="bg-light"> 
-                <a href="dasboard_teacher.php" class="dash-nav-item text-success">
+            <div class=""> 
+                <a href="dasboard_teacher.php" class="dash-nav-item text-white">
                     <i class="fas fa-home"></i> My Class 
                 </a> 
             </div>
@@ -16,8 +16,8 @@
                     <i class="fas fa-users"></i>Notification
                 </a>
             </div>
-            <div class="border-top">
-                <a href="add_downloadable.php"class="dash-nav-item text-white">
+            <div class="border-top bg-light">
+                <a href="add_downloadable.php"class="dash-nav-item text-success">
                     <i class="fas fa-users"></i>Downloadables
                 </a>
             </div>
