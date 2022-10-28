@@ -2,9 +2,9 @@
 <?php $get_id = $_GET['id']; ?>
 <body>
 <div class="dash">  
-    <?php include('admin_sidebar.php'); ?>      
+    <?php include('section_sidebar.php'); ?>      
     <div class="dash-app">
-            <header class="dash-toolbar bg-success">
+            <header class="dash-toolbar">
                 <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
             </header>
             <main class="dash-content">

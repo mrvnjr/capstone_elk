@@ -16,7 +16,7 @@
 					</div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-8" id=" ">
+                        <div class="col-lg-12" id=" ">
 							<div class="card">
 								<div class="card-header">
 									<?php 
@@ -27,16 +27,17 @@
 									Number of Students: <span class="badge badge-info"><?php echo $count_my_student; ?></span>
 								</div>
 								<div class="card-body">
-								<?php
-														$my_student = mysqli_query($conn,"SELECT * FROM teacher_class_student
-														LEFT JOIN student ON student.student_id = teacher_class_student.student_id 
-														INNER JOIN class ON class.class_id = student.class_id where teacher_class_id = '$get_id' order by lastname ")or die(mysqli_error());
-														while($row = mysqli_fetch_array($my_student)){
-														$id = $row['teacher_class_student_id'];
-														?>
+								<ul	 id="da-thumbs" class="da-thumbs">
+										    <?php
+												$my_student = mysqli_query($conn,"SELECT * FROM teacher_class_student
+												LEFT JOIN student ON student.student_id = teacher_class_student.student_id 
+												INNER JOIN class ON class.class_id = student.class_id where teacher_class_id = '$get_id' order by lastname ")or die(mysqli_error());
+												while($row = mysqli_fetch_array($my_student)){
+												$id = $row['teacher_class_student_id'];
+											?>
 											<li id="del<?php echo $id; ?>">
 													<a href="#">
-															<img id="student_avatar_class" src ="admin/<?php echo $row['location'] ?>" width="124" height="140" class="img-polaroid">
+															<img id="student_avatar_class" src ="../<?php echo $row['location'] ?>" width="124" height="140" class="img-polaroid">
 														<div>
 														<span>
 														<p><?php ?></p>

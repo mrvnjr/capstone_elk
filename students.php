@@ -17,16 +17,7 @@
                         </div>
                        <div class="col-lg-8" id="studentTableDiv">
                             <!--card-->
-                            <div id="block_bg" class="card easion-card">
-                                <div class="card-header">
-                                    <div class="easion-card-title">Teacher List</div>
-                                </div>
-                                    <div class="card-body">
-                                            <?php include('student_table.php'); ?>
-                                        </div>
-                                    </div>
-                                </div>
-				
+                            <?php include('student_table.php'); ?>
                            <!--card-->
                         </div>                                  
                     </div>

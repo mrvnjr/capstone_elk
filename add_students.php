@@ -47,13 +47,10 @@
 								$.jGrowl("Student Successfully  Added", { header: 'Student Added' });
 								$('#studentTableDiv').load('student_table.php', function(response){
 									$('#studentTableDiv').html(response);
-									$('#example').dataTable( {
-										dom: "<'row'<'col-6'l><'col-6'f>r>t<'row'<'col-6'i><'col-6'p>>",
-										Pagination: "bootstrap",
-										oLanguage: {
-											lengthMenu: [[5,10,25,50, -1], [5,10,25,50, "All"]],
-										}
-									} );
+									$('#example').DataTable({
+               						 lengthMenu: [[5,10,25,50, -1], [5,10,25,50, "All"]],
+                
+           							 });
 									$(_this).find(":input").val('');
 									$(_this).find('select option').attr('selected',true);
 									$(_this).find('select option:first').attr('selected',true);

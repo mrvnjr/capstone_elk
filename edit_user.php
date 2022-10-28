@@ -4,7 +4,7 @@
 <div class="dash">  
     <?php include('admin_sidebar.php'); ?>      
     <div class="dash-app">
-            <header class="dash-toolbar bg-success">
+            <header class="dash-toolbar">
                 <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
             </header>
             <main class="dash-content">
@@ -23,7 +23,7 @@
                                         <div class="">
                                         <form action="delete_users.php" method="post">
                                             <table class="table table-in-card" id="example">
-                                                <a data-toggle="modal" href="#user_delete" id="delete"  class="btn btn-danger" name="">Delete</a>
+                                                <a data-toggle="modal" href="#user_delete" id="delete"  class="btn btn-danger" name=""><i class="fas fa-trash-alt"></i></a>
                                                     <?php include('modal_delete.php'); ?>
                                                 <thead>
                                                     <tr>

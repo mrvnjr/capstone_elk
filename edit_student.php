@@ -2,9 +2,9 @@
 <?php $get_id = $_GET['id']; ?>
 <body>
 <div class="dash">  
-    <?php include('admin_sidebar.php'); ?>      
+    <?php include('student_sidebar.php'); ?>      
     <div class="dash-app">
-            <header class="dash-toolbar bg-success">
+            <header class="dash-toolbar">
                 <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
             </header>
             <main class="dash-content">
@@ -23,7 +23,7 @@
                                         <div class="">
 										<form action="delete_student.php" method="post">
 											<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-											<a data-toggle="modal" href="#student_delete" id="delete"  class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+											<a data-toggle="modal" href="#student_delete" id="delete"  class="btn btn-danger" name=""><i class="fas fa-trash-alt"></i></a>
 											<?php include('modal_delete.php'); ?>
 												<thead>
 												<tr>
@@ -54,7 +54,7 @@
 										
 												<td width="100"><?php echo $row['class_name']; ?></td> 
 
-												<td width="30"><a href="edit_student.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="icon-pencil"></i> </a></td>
+												<td width="30"><a href="edit_student.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="far fa-edit"></i> </a></td>
 											
 												</tr>
 										<?php } ?>    

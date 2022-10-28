@@ -23,7 +23,7 @@
         $(document).ready(function () {
             $('#example').DataTable({
                 lengthMenu: [[5,10,25,50, -1], [5,10,25,50, "All"]],
-                dom: "<'row'<'col-6'l><'col-6'f>r>t<'row'<'col-6'i><'col-6'p>>",
+                
             });
         });
     </script>    

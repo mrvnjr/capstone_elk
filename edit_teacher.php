@@ -2,9 +2,9 @@
 <?php $get_id = $_GET['id']; ?>
 <body>
 <div class="dash">  
-    <?php include('admin_sidebar.php'); ?>      
+    <?php include('teacher_sidebar.php'); ?>      
     <div class="dash-app">
-            <header class="dash-toolbar bg-success">
+            <header class="dash-toolbar">
                 <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
             </header>
             <main class="dash-content">
@@ -52,11 +52,7 @@
                                                             <td><?php echo $row['username']; ?></td>
                                                         
                                                             <td width="50"><a href="edit_teacher.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="fas fa-edit"></i></a></td>
-                                                            <?php if ($teacher_stat == 'Activated' ){ ?>
-                                                            <td width="120"><a href="de_activate.php<?php echo '?id='.$id; ?>" class="btn btn-danger"><i class="icon-remove"></i> Deactivate</a></td>
-                                                            <?php }else{ ?>
-                                                            <td width="120"><a href="edit_teacher.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="icon-check"></i> Activated</a></td>				
-                                                            <?php } ?>
+                                                           
                                                 
                                                             </tr>
                                                         <?php } ?>
