@@ -8,7 +8,6 @@
                 <?php include('navbar.php');?>
             </header>
             <main class="dash-content">
-				
                 <div class="container-fluid">
                     <h1>My Class</h1>
                     <div class="row">

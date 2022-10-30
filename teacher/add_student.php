@@ -15,9 +15,11 @@
 							<div class="card">
 								<div class="card-body">
 									
-								
+								<div class="float-right">
+									<a href="my_students.php<?php echo '?id='.$get_id; ?>" class="btn btn-primary"><i class="icon-arrow-left"></i> Back</a>
+								</div>
 							<form method="post" action="">							
-								<button name="submit" type="submit" class="btn btn-info"><i class="icon-save"></i>&nbsp;Add Student</button>
+								<button name="submit" type="submit" class="btn btn-success"><i class="icon-save"></i>&nbsp;Add Student</button>
 									<br>
 									<br>
 										<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">

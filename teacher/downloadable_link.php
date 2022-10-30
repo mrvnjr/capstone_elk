@@ -12,8 +12,8 @@
                     <i class="fas fa-home"></i> Back
                 </a> 
             </div>
-			<div class="bg-light"> 
-                <a href="my_students.php<?php echo '?id='.$get_id; ?>" class="dash-nav-item text-success">
+			<div class=""> 
+                <a href="my_students.php<?php echo '?id='.$get_id; ?>" class="dash-nav-item text-white">
                     <i class="fas fa-home"></i> My Students
                 </a> 
             </div>
@@ -22,8 +22,8 @@
                     <i class="fas fa-users"></i>Subject Overview
                 </a>
             </div> -->
-            <div class="border-top ">
-                <a href="downloadable.php<?php echo '?id='.$get_id; ?>"class="dash-nav-item text-white">
+            <div class="border-top bg-light">
+                <a href="downloadable.php<?php echo '?id='.$get_id; ?>"class="dash-nav-item text-success">
                     <i class="fas fa-users"></i>Downloadables
                 </a>
             </div>
