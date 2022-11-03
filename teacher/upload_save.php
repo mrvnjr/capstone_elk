@@ -16,7 +16,6 @@ $id_class=$_POST['id_class'];
 $get_id=$id_class;
 $name=$_POST['name'];
 
-
 //Function to sanitize values received from the form. Prevents SQL injection
 function clean($str) {
   global $conn;
@@ -100,13 +99,13 @@ if ((!empty($_FILES["uploaded_file"])) && ($_FILES['uploaded_file']['error'] == 
                         $_SESSION['ERRMSG_ARR'] = $errmsg_arr;
                         session_write_close(); ?>
                            <script>
-   window.location = 'downloadable.php<?php echo '?id='.$get_id;  ?>';
-   </script>
-   <?php
+                                window.location = 'downloadable.php<?php echo '?id='.$get_id;  ?>';
+                            </script>
+                    <?php
                         exit();
                     }
-                }
-            } else {
+                        }
+                } else {
                 //unsuccessful upload
                 //echo "Error: A problem occurred during file upload!";
                 $errmsg_arr[] = 'upload of file ' . $filename . ' was unsuccessful';
@@ -114,13 +113,12 @@ if ((!empty($_FILES["uploaded_file"])) && ($_FILES['uploaded_file']['error'] == 
                 if ($errflag) {
                     $_SESSION['ERRMSG_ARR'] = $errmsg_arr;
                     session_write_close(); ?>
-       <script>
-   window.location = 'downloadable.php<?php echo '?id='.$get_id;  ?>';
-   </script>
+        <script>
+            window.location = 'downloadable.php<?php echo '?id='.$get_id;  ?>';
+        </script>
    
-   
-   <?php
-                    exit();
+        <?php
+            exit();
                 }
             }
         } else {
@@ -131,12 +129,11 @@ if ((!empty($_FILES["uploaded_file"])) && ($_FILES['uploaded_file']['error'] == 
             if ($errflag) {
                 $_SESSION['ERRMSG_ARR'] = $errmsg_arr;
                 session_write_close(); ?>
-       <script>
-   window.location = 'downloadable.php<?php echo '?id='.$get_id;  ?>';
-   </script>
-   <?php
-   
-                exit();
+        <script>
+            window.location = 'downloadable.php<?php echo '?id='.$get_id;  ?>';
+        </script>
+    <?php
+        exit();
             }
         }
     } else {
@@ -148,31 +145,31 @@ if ((!empty($_FILES["uploaded_file"])) && ($_FILES['uploaded_file']['error'] == 
             $_SESSION['ERRMSG_ARR'] = $errmsg_arr;
             session_write_close(); ?>
             <script>
-   window.location = 'downloadable.php<?php echo '?id='.$get_id;  ?>';
-   </script>
-   <?php
-            exit();
+                window.location = 'downloadable.php<?php echo '?id='.$get_id;  ?>';
+            </script>
+        <?php
+                    exit();
+                }
+            }
+        } else {
+            //no file to upload
+            //echo "Error: No file uploaded";
+
+            $errmsg_arr[] = 'Error: No file uploaded';
+            $errflag = true;
+            if ($errflag) {
+                $_SESSION['ERRMSG_ARR'] = $errmsg_arr;
+                session_write_close(); ?>
+            <script>
+                window.location = 'downloadable.php<?php echo '?id='.$get_id;  ?>';
+            </script>
+        <?php
+                exit();
+            }
         }
-    }
-} else {
-    //no file to upload
-    //echo "Error: No file uploaded";
-
-    $errmsg_arr[] = 'Error: No file uploaded';
-    $errflag = true;
-    if ($errflag) {
-        $_SESSION['ERRMSG_ARR'] = $errmsg_arr;
-        session_write_close(); ?>
-       <script>
-   window.location = 'downloadable.php<?php echo '?id='.$get_id;  ?>';
-   </script>
-   <?php
-        exit();
-    }
-}
 
 
-mysqli_close($conn);
-?>
+        mysqli_close($conn);
+        ?>
 
 

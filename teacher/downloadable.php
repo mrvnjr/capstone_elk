@@ -27,7 +27,7 @@
 											$query = mysqli_query($conn,"select * FROM files where class_id = '$get_id'  order by fdatein DESC ")or die(mysqli_error());
 											$count = mysqli_fetch_array($query);
 											if ($count == '0'){ ?>
-												<div class="alert alert-info"><i class="icon-info-sign"></i> Currently you did not upload any downloadable materials</div>
+												<div class="alert alert-primary"><i class="icon-info-sign"></i> Currently you did not upload any downloadable materials</div>
 										<?php	}else{?>   
 											<form action="copy_file.php" method="post">
 												<a data-toggle="modal" href="#user_delete" id="delete"  class="btn btn-info" name=""><i class="icon-file"></i> Copy Check item</a>

@@ -3,7 +3,7 @@
         <div class="easion-card-title">Add downloadable</div>
     </div>
     <div class="card-body ">
-        <form class="" id="add_downloadble" method="post" enctype="multipart/form-data" name="upload" >
+        <form class="" id="add_downloadble" method="post"action="upload_save.php" enctype="multipart/form-data" name="upload" >
             <div class="form-group">
                 <label class="form-label" for="inputEmail">File</label>            
                     <input name="uploaded_file"  class=" form-control-file " id="fileInput" type="file" required>
@@ -22,28 +22,28 @@
             </div>
         </form>
     </div>
-        <script>
-			jQuery(document).ready(function($){
-				$("#add_downloadble").submit(function(e){
-					$.jGrowl("Uploading File Please Wait......", { sticky: true });
-					e.preventDefault();
-					var _this = $(e.target);
-					var formData = new FormData($(this)[0]);
-					$.ajax({
-						type: "POST",
-						url: "upload_save.php",
-						data: formData,
-						success: function(html){
-							$.jGrowl("File Successfully  Added", { header: 'File Added' });
-                            setTimeout(function(){
-                                window.location = 'downloadable.php<?php echo '?id='.$get_id; ?>';
-                            },2000)
-						},
-						cache: false,
-						contentType: false,
-						processData: false
-					});
-				});
-			});
-		</script>	
-    </div>
+    <script>
+        jQuery(document).ready(function($){
+            $("#add_downloadble").submit(function(e){
+                $.jGrowl("Uploading File Please Wait......", { sticky: true });
+                e.preventDefault();
+                var _this = $(e.target);
+                var formData = new FormData($(this)[0]);
+                $.ajax({
+                    type: "POST",
+                    url: "upload_save.php",
+                    data: formData,
+                    success: function(html){
+                        $.jGrowl("File Successfully  Added", { header: 'File Added' });
+                        setTimeout(function(){
+                            window.location = 'downloadable.php<?php echo '?id='.$get_id; ?>';
+                        },2000)
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+            });
+        });
+    </script>	
+</div>

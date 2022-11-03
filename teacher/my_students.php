@@ -10,13 +10,14 @@
                 <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
             </header>
             <main class="dash-content">
-					<div class="pull-right">
-						<a href="add_student.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><i class="icon-plus-sign"></i> Add Student</a>
-						<a onclick="window.open('print_student.php<?php echo '?id='.$get_id; ?>')"  class="btn btn-success"><i class="icon-list"></i> Student List</a>
-					</div>
+					
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12" id=" ">
+							<div class="mb-2">
+								<a href="add_student.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><i class="icon-plus-sign"></i> Add Student</a>
+								<a onclick="window.open('print_student.php<?php echo '?id='.$get_id; ?>')"  class="btn btn-success"><i class="icon-list"></i> Student List</a>
+							</div>
 							<div class="card">
 								<div class="card-header">
 									<?php 
@@ -35,7 +36,7 @@
 												while($row = mysqli_fetch_array($my_student)){
 												$id = $row['teacher_class_student_id'];
 											?>
-											<li id="del<?php echo $id; ?>">
+											<li id="del<?php echo $id; ?>" class="m-1 card	">
 													<a href="#">
 															<img id="student_avatar_class" src ="../<?php echo $row['location'] ?>" width="124" height="140" class="img-polaroid">
 														<div>
@@ -63,7 +64,7 @@
 															cache: false,
 															success: function(html){
 																$("#del"+id).fadeOut('slow', function(){ $(this).remove();}); 
-																$('#'+id).modal('hide');
+																$('#'+id).modal('show');
 																$.jGrowl("Your Student is Successfully Remove", { header: 'Student Remove' });
 															}
 															}); 	
