@@ -110,7 +110,7 @@
 								        <hr>
 									        <center>
 									            <div class="form-group">
-													<button name="Upload" type="submit" value="Upload" class="btn btn-success" /><i class="icon-upload-alt"></i>&nbsp;Upload</button>
+													<button name="Upload" type="submit" value="Upload" class="btn btn-success" /><i class="fas fa-file-upload"></i>&nbsp;Upload</button>
 											    </div>
 									        </center>
             

@@ -19,10 +19,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.4.8/jquery.jgrowl.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.4.8/jquery.jgrowl.min.js" integrity="sha512-h77yzL/LvCeAE601Z5RzkoG7dJdiv4KsNkZ9Urf1gokYxOqtt2RVKb8sNQEKqllZbced82QB7+qiDAmRwxVWLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     
-<script>
-        $(function() {
-        $("#example").dataTable({
-           "aoColumnDefs": [ { "bSortable": false, "aTargets": [ 0,3 ] } ],"aaSorting": []
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable({
+                lengthMenu: [[5,10,25,50, -1], [5,10,25,50, "All"]],
+                
+            });
         });
-    });
-</script>    
+    </script>    

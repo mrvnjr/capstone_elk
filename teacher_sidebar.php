@@ -6,41 +6,41 @@
     </header>
     <nav class="dash-nav-list bg-success">
         
-            <div class=""> 
-                <a href="dashboard.php" class="dash-nav-item text-white">
-                    <i class="fas fa-home"></i> Dashboard 
+            <div class="bg-light"> 
+                <a href="dasboard_teacher.php" class="dash-nav-item text-success">
+                    <i class="fas fa-home"></i> My Class 
                 </a> 
             </div>
             <div class="border-top">
-                <a href="students.php"class="dash-nav-item text-white">
-                    <i class="fas fa-users"></i>Students
+                <a href="notification_teacher.php"class="dash-nav-item text-white">
+                    <i class="fas fa-users"></i>Notification
                 </a>
             </div>
-            <div class="border-top bg-light">
-                <a href="teachers.php"class="dash-nav-item text-success">
-                    <i class="fas fa-users"></i>Teachers
+            <div class="border-top">
+                <a href="add_downloadable.php"class="dash-nav-item text-white">
+                    <i class="fas fa-users"></i>Downloadables
                 </a>
             </div>
         
-            <div class="border-top ">
-                <a href="admin_user.php"class="dash-nav-item text-white">
-                    <i class="fas fa-user-cog"></i>Admin Users
+            <div class="border-top">
+                <a href="add_announcement.php"class="dash-nav-item text-white">
+                    <i class="fas fa-user-cog"></i>Announcement
                 </a>
             </div>
             <div class="border-top">
-                <a href="subjects.php"class="dash-nav-item text-white">
-                    <i class="fas fa-plus-circle"></i>Subject
+                <a href="add_assignment.php"class="dash-nav-item text-white">
+                    <i class="fas fa-plus-circle"></i>Assignment
                 </a>
             </div>
             <div class="border-top">
-                <a href="class.php"class="dash-nav-item text-white">
-                    <i class="fas fa-plus-circle"></i> Section
+                <a href="teacher_quiz.php"class="dash-nav-item text-white">
+                    <i class="fas fa-plus-circle"></i> Quiz
                 </a>
             </div> 
-            <div class="border-top">
-                <a href="school_year.php"class="dash-nav-item text-white">
-                    <i class="fas fas fa-calendar-alt"></i>School Year
+            <!-- <div class="border-top">
+                <a href="teacher_share.php"class="dash-nav-item text-white">
+                    <i class="fas fas fa-calendar-alt"></i>Shared Files
                 </a>
-            </div>
+            </div> -->
     </nav>
 </div>
