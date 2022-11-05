@@ -5,15 +5,19 @@
         </a>
     </header>
     <nav class="dash-nav-list bg-success">
-        
-            <div class="bg-light"> 
-                <a href="dasboard_teacher.php" class="dash-nav-item text-success">
+	<?php include('teacher_count.php'); ?>
+            <div class=""> 
+                <a href="dasboard_teacher.php" class="dash-nav-item text-white">
                     <i class="fas fa-home"></i> My Class 
                 </a> 
             </div>
-            <div class="border-top">
-                <a href="notification_teacher.php"class="dash-nav-item text-white">
+            <div class="border-top bg-light">
+                <a href="notification_teacher.php"class="dash-nav-item text-success">
                     <i class="fas fa-users"></i>Notification
+                    <?php if($not_read == '0'){
+                    }else{ ?>
+                        <span class="badge badge-pill badge-danger ml-3"><?php echo $not_read; ?></span>
+                    <?php } ?>
                 </a>
             </div>
             <div class="border-top">
