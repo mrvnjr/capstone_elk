@@ -3,7 +3,7 @@
 <?php $get_id = $_GET['id']; ?>
 <body>
 <div class="dash">  
-	<?php include('downloadable_link.php'); ?>    
+	<?php include('assignment_link.php'); ?>    
     <div class="dash-app">
             <header class="dash-toolbar ">
 				<?php include('navbar.php');?>
@@ -35,7 +35,7 @@
 										 <td><?php echo $row['fdatein']; ?></td>
                                          <td><?php  echo $row['fname']; ?></td>
                                          <td><?php echo $row['fdesc']; ?></td>                                      
-                                         <td width="150">
+                                         <td width="170">
 										<form method="post" action="view_submit_assignment.php<?php echo '?id='.$get_id ?>&<?php echo 'post_id='.$id ?>">
 										
 										 <button data-placement="bottom" title="View Student who submit Assignment" id="<?php echo $id; ?>view" class="btn btn-success float-left"><i class="fas fa-folder-open icon-large"></i></button>
@@ -47,7 +47,7 @@
 										?>
 											<a data-placement="bottom" title="Download" id="<?php echo $id; ?>download"  class="btn btn-info  float-left" href="<?php echo $row['floc']; ?>"><i class="fas fa-file-download icon-large"></i></a>
 										<?php } ?>
-											<a data-placement="bottom" title="Remove" id="<?php echo $id; ?>remove"  class="btn btn-danger float-right"  href="#<?php echo $id; ?>" data-toggle="modal"><i class="fas fa-window-close icon-large"></i></a>
+											<button data-placement="bottom" title="Remove" id="<?php echo $id; ?>remove"  class="btn btn-danger float-right"  data-target="#<?php echo $id; ?>" data-toggle="modal"><i class="fas fa-window-close icon-large"></i></button>
 											<?php include('delete_assigment_modal.php'); ?>									
 									</td>                                      
 														<script type="text/javascript">

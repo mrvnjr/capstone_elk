@@ -14,8 +14,7 @@
                     <div class="col-lg-12" id=" ">
 							<div class="card">
 								<div class="card-body">
-                                    dfdada
-									
+                                   
 
 								</div>
 							</div>
