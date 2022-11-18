@@ -6,7 +6,7 @@
 		<?php include('quiz_sidebar_teacher.php'); ?>   
 		<div class="dash-app">
 			<header class="dash-toolbar ">
-				<?php include('navbar.php'); ?>     
+				<?php include('navbar_student.php'); ?>     
 			</header>
 			<main class="dash-content">
 			<div class="container-fluid">

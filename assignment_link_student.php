@@ -24,11 +24,11 @@
 				</a>
             </div>
 
-			<div class="border-top">
+			<!-- <div class="border-top">
                 <a class="dash-nav-item text-white" href="subject_overview_student.php<?php echo '?id='.$get_id; ?>"><i class="far fa-address-book">
 				</i>Subject Overview
 				</a>
-            </div>
+            </div> -->
 
 			<div class="border-top">
                 <a class="dash-nav-item text-white" href="downloadable_student.php<?php echo '?id='.$get_id; ?>"><i class="fas fa-cloud-download-alt">
@@ -36,8 +36,8 @@
 				</a>
             </div>
 
-			<div class="border-top">
-                <a class="dash-nav-item text-white" href="assignment_student.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-plus-circle">
+			<div class="bg-light">
+                <a class="dash-nav-item text-success" href="assignment_student.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-plus-circle">
 				</i>Assignment
 				</a>
             </div>
@@ -48,8 +48,8 @@
 				</a>
             </div>
 
-			<div class="bg-light">
-                <a class="dash-nav-item text-success" href="student_quiz_list.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-plus-circle">
+			<div class="border-top">
+                <a class="dash-nav-item text-white" href="student_quiz_list.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-plus-circle">
 				</i>Quiz
 				</a>
             </div>

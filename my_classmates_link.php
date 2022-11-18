@@ -12,8 +12,8 @@
 				</a>
             </div>
 
-            <div class="border-top">
-                <a class="dash-nav-item text-white" href="my_classmates.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-users">
+            <div class="bg-light">
+                <a class="dash-nav-item text-success" href="my_classmates.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-users">
 				</i>My Classmates		
 				</a>
             </div>
@@ -24,14 +24,14 @@
 				</a>
             </div>
 
-			<div class="border-top">
+			<!-- <div class="border-top">
                 <a class="dash-nav-item text-white" href="subject_overview_student.php<?php echo '?id='.$get_id; ?>"><i class="far fa-address-book">
 				</i>Subject Overview
 				</a>
-            </div>
+            </div> -->
 
-			<div class="bg-light">
-                <a class="dash-nav-item text-success" href="downloadable_student.php<?php echo '?id='.$get_id; ?>"><i class="fas fa-cloud-download-alt">
+			<div class="border-top">
+                <a class="dash-nav-item text-white" href="downloadable_student.php<?php echo '?id='.$get_id; ?>"><i class="fas fa-cloud-download-alt">
 				</i>Downloadable
 				</a>
             </div>
