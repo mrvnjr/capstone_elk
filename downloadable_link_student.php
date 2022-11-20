@@ -18,20 +18,20 @@
 				</a>
             </div>
 
-			<div class="bg-light">
-                <a class="dash-nav-item text-success" href="progress.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-sort-amount-up">
+			<div class="border-top">
+                <a class="dash-nav-item text-white" href="progress.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-sort-amount-up">
 				</i>My progress	
 				</a>
             </div>
 
-			<div class="border-top">
+			<!-- <div class="border-top">
                 <a class="dash-nav-item text-white" href="subject_overview_student.php<?php echo '?id='.$get_id; ?>"><i class="far fa-address-book">
 				</i>Subject Overview
 				</a>
-            </div>
+            </div> -->
 
-			<div class="border-top">
-                <a class="dash-nav-item text-white" href="downloadable_student.php<?php echo '?id='.$get_id; ?>"><i class="fas fa-cloud-download-alt">
+			<div class="bg-light">
+                <a class="dash-nav-item text-success" href="downloadable_student.php<?php echo '?id='.$get_id; ?>"><i class="fas fa-cloud-download-alt">
 				</i>Downloadable
 				</a>
             </div>

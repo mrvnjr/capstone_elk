@@ -10,7 +10,7 @@
         </header>
             <main class="dash-content">
                 <div class="container-fluid">
-                    <h1 class="dash-title">Students</h1>
+                    <h1>Students</h1> 
                     <div class="row">
                         <div class="col-lg-4" id="adduser">
 				            <?php include('add_students.php'); ?>		   			

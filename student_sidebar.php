@@ -14,9 +14,7 @@
          
         
             <div class="bg-light"> 
-			<a class="dash-nav-item text-success" href="dashboard_student.php"><i class="fas fa-users">
-				</i>My Class
-				</a>
+			<a class="dash-nav-item text-success" href="dashboard_student.php"><i class="fas fa-users"></i>My Class</a>
             </div>
 
             <div class="">
