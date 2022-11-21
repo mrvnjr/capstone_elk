@@ -6,7 +6,7 @@
     <div class="dash-app">
             <header class="dash-toolbar ">
                 <!-- <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a> -->
-                <?php include('navbar.php');?>
+                <?php include('navbar_teacher.php');?>
             </header>
             <main class="dash-content">
                 <div class="container-fluid">

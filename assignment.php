@@ -6,7 +6,7 @@
 	<?php include('assignment_link.php'); ?>    
     <div class="dash-app">
             <header class="dash-toolbar ">
-				<?php include('navbar.php');?>
+			<?php include('navbar_teacher.php'); ?>
             </header>
             <main class="dash-content">
                 <div class="container-fluid">

@@ -48,5 +48,5 @@
             </main> 	
     </div>
 </div>
-<?php include('script.php'); ?>
+<?php include('scripts.php'); ?>
 </body>
