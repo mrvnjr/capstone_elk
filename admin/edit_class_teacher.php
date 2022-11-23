@@ -1,4 +1,6 @@
 <?php include('header.php');?>
+<?php $get_id = $_GET['id']; ?>
+
 <body>
 <div class="dash">  
     <?php include('teacher_sidebar.php'); ?>      
@@ -8,14 +10,9 @@
             </header>
             <main class="dash-content">
                 <div class="container-fluid">
-                    <div class="float-right">
-                        <a href="teachers.php" class="btn btn-success"><i class="fas fa-plus"></i> Add Teacher</a>
-                    </div>
-                    <h1>Teachers Class</h1>
                     <div class="row">
-
                         <div class="col-lg-4" id="adduser">
-                            <?php include('add_class_form.php'); ?>
+                            <?php include('edit_class_teacher_form.php'); ?>
                         </div>
                         <div class="col-lg-8" id="">
                             <!--card-->
@@ -48,8 +45,7 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    
-                                                    <?php $teacher_query = mysqli_query($conn,"select * from teacher_class
+                                                <?php $teacher_query = mysqli_query($conn,"select * from teacher_class
                                                     LEFT JOIN class ON class.class_id = teacher_class.class_id
                                                     LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
                                                     LEFT JOIN teacher ON teacher.teacher_id = teacher_class.teacher_id
