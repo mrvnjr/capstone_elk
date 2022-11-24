@@ -13,8 +13,8 @@
             <div class="container-fluid">
                 <h1>Quiz</h1>
                 <div class="row">
-                    <div class="col-lg-12" id=" ">
-                        <div class="card">
+                    <div class="col-sm-12" id=" ">
+                        <div class="card easion-card">
                             <div class="card-header">
                                 <?php 		$query = mysqli_query($conn,"select * FROM class_quiz 
                                             LEFT JOIN quiz on class_quiz.quiz_id = quiz.quiz_id
@@ -23,33 +23,32 @@
                                 ?>
                                 <div id="" class="muted float-right"><span class="badge badge-info"><?php echo $count; ?></span></div>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body table-responsive">
                                 <form action="copy_file_student.php" method="post">
                                     <?php include('copy_to_backpack_modal.php'); ?>
-                                    <table cellpadding="0" cellspacing="0" border="0" class="table" id="">
+                                    <table cellpadding="0" cellspacing="0" border="0" class="table table-in-card" id="">
                                         <thead>
                                             <tr>
-                                                <th>Quiz Title</th>
-                                                <th>Description</th>
-                                                <th>Quiz Time (In Minutes)</th>
-                                                <th></th>
+                                                <th scope="col">Quiz Title</th>
+                                                <th scope="col">Description</th>
+                                                <th scope="col">Quiz Time (In Minutes)</th>
+                                                <th scope="col"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                         <?php
-										$query = mysqli_query($conn,"select * FROM class_quiz 
-										LEFT JOIN quiz on class_quiz.quiz_id = quiz.quiz_id
-										where teacher_class_id = '$get_id'  order by class_quiz_id DESC ")or die(mysqli_error());
-										while($row = mysqli_fetch_array($query)){
-										$id  = $row['class_quiz_id'];
-										$quiz_id  = $row['quiz_id'];
-										$quiz_time  = $row['quiz_time'];
-									
-										$query1 = mysqli_query($conn,"select * from student_class_quiz where class_quiz_id = '$id' and student_id = '$session_id'")or die(mysqli_error());
-										$row1 = mysqli_fetch_array($query1);
-										$grade = $row1['grade'];
-
-									?>                              
+                                            $query = mysqli_query($conn,"select * FROM class_quiz 
+                                            LEFT JOIN quiz on class_quiz.quiz_id = quiz.quiz_id
+                                            where teacher_class_id = '$get_id'  order by class_quiz_id DESC ")or die(mysqli_error());
+                                            while($row = mysqli_fetch_array($query)){
+                                            $id  = $row['class_quiz_id'];
+                                            $quiz_id  = $row['quiz_id'];
+                                            $quiz_time  = $row['quiz_time'];
+                                        
+                                            $query1 = mysqli_query($conn,"select * from student_class_quiz where class_quiz_id = '$id' and student_id = '$session_id'")or die(mysqli_error());
+                                            $row1 = mysqli_fetch_array($query1);
+                                            $grade = $row1['grade'];
+								    	?>                              
 										<tr>                     
 										 <td><?php echo $row['quiz_title']; ?></td>
                                          <td><?php  echo $row['quiz_description']; ?></td>                                     

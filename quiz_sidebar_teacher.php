@@ -1,4 +1,5 @@
 <div class="dash-nav dash-nav-dark bg-success">
+<?php include('teacher_count.php'); ?>
     <header class="">
         <a href="#!" class="menu-toggle">
             <i class="fas fa-bars"></i>
@@ -14,6 +15,10 @@
             <div class="border-top">
                 <a href="notification_teacher.php"class="dash-nav-item text-white">
                     <i class="fas fa-users"></i>Notification
+                    <?php if($not_read == '0'){
+				}else{ ?>
+					<span class="badge badge-important"><?php echo $not_read; ?></span>
+				<?php } ?>
                 </a>
             </div>
             <div class="border-top ">

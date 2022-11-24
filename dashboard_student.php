@@ -9,8 +9,8 @@
                 
             </header>
             <main class="dash-content">
-				<h1>My Class</h1>
                 <div class="container-fluid">
+                    <h1>My Class</h1>
                     <div class="row">
                     <?php
 						$school_year_query = mysqli_query($conn,"select * from school_year order by school_year DESC")or die(mysqli_error());

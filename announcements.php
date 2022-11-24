@@ -9,8 +9,8 @@
 			<?php include('navbar_teacher.php'); ?>
             </header>
             <main class="dash-content">
-				<h1>Add Announcements</h1>
-                <div class="container-fluid">
+				<div class="container-fluid">
+					<h1>Add Announcements</h1>
                     <div class="row">
                         <div class="col-lg-8" id=" ">
 							<div class="card">

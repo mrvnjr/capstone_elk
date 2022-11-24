@@ -5,7 +5,7 @@
 	</div>
 		<div class="card-body">
 			<form action="delete_student.php" method="post">
-				<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
+				<table class="table table-in-card" id="example">
 					<a data-toggle="modal" href="#student_delete" id="delete"  class="btn btn-danger" name=""><i class="fas fa-trash-alt"></i></a>
 						<div class="navbar navbar-expand-lg ">
 							<ul class="navbar-nav">
