@@ -24,7 +24,7 @@
 				</i>Notification
                 <?php if($not_read == '0'){
 				}else{ ?>
-					<span class="badge badge-important"><?php echo $not_read; ?></span>
+					<span class="badge badge-pill badge-danger ml-3"><?php echo $not_read; ?></span>
 				<?php } ?>
 				
 				</a>

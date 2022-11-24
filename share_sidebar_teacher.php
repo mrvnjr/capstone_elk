@@ -1,3 +1,4 @@
+
 <div class="dash-nav dash-nav-dark bg-success">
     <header class="">
         <a href="#!" class="menu-toggle">
@@ -6,8 +7,8 @@
     </header>
     <nav class="dash-nav-list bg-success">
     <?php include('teacher_count.php'); ?>
-            <div class="bg-light"> 
-                <a href="dasboard_teacher.php" class="dash-nav-item text-success">
+            <div class=""> 
+                <a href="dasboard_teacher.php" class="dash-nav-item text-white">
                     <i class="fas fa-home"></i> My Class 
                 </a> 
             </div>
@@ -41,10 +42,12 @@
                     <i class="fas fa-plus-circle"></i> Quiz
                 </a>
             </div> 
-            <div class="border-top">
-                <a href="teacher_share.php"class="dash-nav-item text-white">
-                    <i class="fas fa-copy"></i>Shared Files
+            <div class="border-top bg-light">
+                <a href="teacher_share.php"class="dash-nav-item text-success">
+                    <i class="far fa-copy"></i>Shared Files
                 </a>
             </div>
+	<!--?php include('search_other_class.php'); ?-->	
+
     </nav>
 </div>

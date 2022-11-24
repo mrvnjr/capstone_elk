@@ -41,10 +41,10 @@
                     <i class="fas fa-plus-circle"></i> Quiz
                 </a>
             </div> 
-            <!-- <div class="border-top">
+            <div class="border-top">
                 <a href="teacher_share.php"class="dash-nav-item text-white">
-                    <i class="fas fas fa-calendar-alt"></i>Shared Files
+                    <i class="fas fa-copy"></i>Shared Files
                 </a>
-            </div> -->
+            </div>
     </nav>
 </div>

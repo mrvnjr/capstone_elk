@@ -48,7 +48,7 @@
 													</a>
 													<p class="class"><?php echo $row['lastname'];?></p>
 													<p class="subject"><?php echo $row['firstname']; ?></p>
-													<a  href="#<?php echo $id; ?>" data-toggle="modal"><i class="icon-trash"></i> Remove</a>	
+													<a  href="#<?php echo $id; ?>" data-toggle="modal"><i class="fas fa-trash-alt"></i> Remove</a>	
 											</li>
 											<?php include("remove_student_modal.php"); ?>
 											<?php } ?>

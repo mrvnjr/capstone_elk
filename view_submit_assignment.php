@@ -15,10 +15,10 @@
 
 <body class="studentTableDiv">
 <div class="dash">  
-	<?php include('downloadable_link.php'); ?>    
+	<?php include('assignment_link.php'); ?>    
     <div class="dash-app">
             <header class="dash-toolbar ">
-				<?php include('navbar.php');?>
+				<?php include('navbar_teacher.php');?>
             </header>
             <main class="dash-content">
                 <div class="container-fluid">
@@ -26,7 +26,7 @@
                         <div class="col-lg-12" id=" ">
 							<div class="card">
 								<div class="card-header">
-									<div id="" class="muted pull-right"><a href="assignment.php<?php echo '?id='.$get_id; ?>"><i class="fas fa-arrow-left"></i> Back</a></div>
+									<div id="" class="muted float-right"><a href="assignment.php<?php echo '?id='.$get_id; ?>"><i class="fas fa-arrow-left"></i> Back</a></div>
 								</div>
 								<div class="card-body">
 								<?php
@@ -64,13 +64,13 @@
 															<td><?php  echo $row['fname']; ?></td>
 															<td><?php echo $row['fdesc']; ?></td>                                                                        
 															<td><?php echo $row['firstname']." ".$row['lastname']; ?></td>                                                                        
-															<td><a href="<?php echo $row['floc']; ?>"><i class="icon-download icon-large"></i></a></td>                                                                        
-															<td width="140">
+															<td><a href="<?php echo $row['floc']; ?>"><i class="fas fa-download"></i></a></td>                                                                        
+															<td width="180">
 															<form method="post" action="save_grade.php">
-															<input type="hidden" class="span4" name="id" value="<?php echo $id; ?>">
-															<input type="hidden" class="span4" name="post_id" value="<?php echo $post_id; ?>">
-															<input type="hidden" class="span4" name="get_id" value="<?php echo $get_id; ?>">
-															<input type="text" class="span4" name="grade" value="<?php echo $row['grade']; ?>">
+															<input type="hidden" class="col-3" name="id" value="<?php echo $id; ?>">
+															<input type="hidden" class="col-3" name="post_id" value="<?php echo $post_id; ?>">
+															<input type="hidden" class="col-3" name="get_id" value="<?php echo $get_id; ?>">
+															<input type="text" class="col-5" name="grade" value="<?php echo $row['grade']; ?>">
 															<button name="save" class="btn btn-success" id="btn_s"><i class="icon-save"></i> Save</button>
 															</form>
 															</td>                                                                        
