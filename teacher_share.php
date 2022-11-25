@@ -25,7 +25,7 @@
 									</div>
 									<form action="delete_shared.php" method="post">
   									<table cellpadding="0" cellspacing="0" border="0" class="table" id="">
-								<a data-toggle="modal" href="#backup_delete" id="delete"  class="btn btn-success mb-2" name=""><i class="icon-move icon-large"></i> Move</a>
+								<a data-toggle="modal" href="#backup_delete" id="delete"  class="btn btn-success mb-2" name=""><i class="fas fa-arrows-alt"></i> Move</a>
 									<?php include('modal_share_delete.php');  ?>
 										<thead>
 										        <tr>

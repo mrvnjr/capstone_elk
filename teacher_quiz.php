@@ -17,8 +17,8 @@
                                 <div class="card-body">
                                     <div class="col-12">
                                         <div class="float-right mb-2">
-                                            <a href="add_quiz.php" class="btn btn-info"><i class="icon-plus-sign"></i> Add Quiz</a>
-                                            <td width="30"><a href="add_quiz_to_class.php" class="btn btn-success"><i class="icon-plus-sign"></i> Add Quiz to Class</a></td>   
+                                            <a href="add_quiz.php" class="btn btn-info"><i class="fas fa-plus-circle"></i> Add Quiz</a>
+                                            <td width="30"><a href="add_quiz_to_class.php" class="btn btn-success"><i class="fas fa-plus-circle"></i> Add Quiz to Class</a></td>   
                                         </div>
                                         <form action="delete_quiz.php" method="post">
                                             <table cellpadding="0" cellspacing="0" border="0" class="table" id="">

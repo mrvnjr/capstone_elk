@@ -18,7 +18,7 @@
 									<form method="post">
 										<textarea name="content" class="form-control"id="ckeditor_full"></textarea>
 										<br>
-										<button name="post" class="btn btn-primary"><i class="icon-check icon-large"></i> Post</button>
+										<button name="post" class="btn btn-primary"><i class="fas fa-check"></i> Post</button>
 									</form>
 								</div>
 									
