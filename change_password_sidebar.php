@@ -1,20 +1,50 @@
-<div class="span3" id="sidebar">
-	<img id="avatar" class="img-polaroid" src="admin/<?php echo $row['location']; ?>">
-	<?php include('teacher_count.php'); ?>
-	<ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
-		<li class=""><a href="dasboard_teacher.php"><i class="icon-chevron-right"></i><i class="icon-group"></i>&nbsp;My Class</a></li>
-		<li class=""><a href="notification_teacher.php"><i class="icon-chevron-right"></i><i class="icon-info-sign"></i>&nbsp;Notification
-			<?php if($not_read == '0'){
-				}else{ ?>
-					<span class="badge badge-important"><?php echo $not_read; ?></span>
-				<?php } ?>
-		</a></li>
-		<li class=""><a href="teacher_message.php"><i class="icon-chevron-right"></i><i class="icon-envelope-alt"></i>&nbsp;Message</a></li> 
-		<li class=""><a href="teacher_backack.php"><i class="icon-chevron-right"></i><i class="icon-suitcase"></i>&nbsp;Backpack</a></li> 
-		<!-- <li class=""><a href="teacher_quiz.php"><i class="icon-chevron-right"></i><i class="icon-list"></i>&nbsp;Quiz</a></li>  -->
-		<li class=""><a href="add_downloadable.php"><i class="icon-chevron-right"></i><i class="icon-plus-sign"></i>&nbsp;Add Downloadables</a></li> 
-		<li class=""><a href="add_announcement.php"><i class="icon-chevron-right"></i><i class="icon-plus-sign"></i>&nbsp;Add Announcement</a></li> 
-	</ul>
-	<?php include('search_other_class.php'); ?>	
+<div class="dash-nav dash-nav-dark bg-success">
+    <header class="">
+        <a href="#!" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </a>
+    </header>
+    <nav class="dash-nav-list bg-success">
+    <?php include('teacher_count.php'); ?>
+            <div class=""> 
+                <a href="dasboard_teacher.php" class="dash-nav-item text-white">
+                    <i class="fas fa-home"></i> My Class 
+                </a> 
+            </div>
+            <div class="border-top">
+                <a href="notification_teacher.php"class="dash-nav-item text-white">
+                    <i class="fas fa-info-circle"></i>Notification
+                    <?php if($not_read == '0'){
+				        }else{ ?>
+					    <span class="badge badge-important"><?php echo $not_read; ?></span>
+				    <?php } ?>
+                </a>
+            </div>
+            <div class="border-top ">
+                <a href="add_downloadable.php"class="dash-nav-item text-white">
+                    <i class="fas fa-plus-circle"></i>Downloadables
+                </a>
+            </div>
+        
+            <div class="border-top">
+                <a href="add_announcement.php"class="dash-nav-item text-white">
+                    <i class="fas fa-plus-circle"></i>Announcement
+                </a>
+            </div>
+            <div class="border-top">
+                <a href="add_assignment.php"class="dash-nav-item text-white">
+                    <i class="fas fa-plus-circle"></i>Assignment
+                </a>
+            </div>
+            <div class="border-top">
+                <a href="teacher_quiz.php"class="dash-nav-item text-white">
+                    <i class="fas fa-clipboard-list"></i> Quiz
+                </a>
+            </div> 
+            <div class="border-top">
+                <a href="teacher_share.php"class="dash-nav-item text-white">
+                    <i class="fas fa-copy"></i>Shared Files
+                </a>
+            </div>
+    </nav>
 </div>
-
