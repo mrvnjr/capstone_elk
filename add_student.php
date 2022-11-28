@@ -16,10 +16,10 @@
 								<div class="card-body">
 									
 								<div class="float-right">
-									<a href="my_students.php<?php echo '?id='.$get_id; ?>" class="btn btn-primary"><i class="icon-arrow-left"></i> Back</a>
+									<a href="my_students.php<?php echo '?id='.$get_id; ?>" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back</a>
 								</div>
 							<form method="post" action="">							
-								<button name="submit" type="submit" class="btn btn-success"><i class="icon-save"></i>&nbsp;Add Student</button>
+								<button name="submit" type="submit" class="btn btn-success"><i class="fas fa-plus-circle"></i>&nbsp;Add Student</button>
 									<br>
 									<br>
 										<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
@@ -43,7 +43,7 @@
 											?>
 												<tr>
 													<input type="hidden" name="test" value="<?php echo $a; ?>">
-													<td width="70"><img  class="img-rounded" src="../<?php echo $row['location']; ?>" height="50" width="40"></td>
+													<td width="70"><img  class="rounded-circle" src="admin/<?php echo $row['location']; ?>" height="50" width="40"></td>
 													<td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td> 
 													<td><?php echo $row['class_name']; ?></td> 
 

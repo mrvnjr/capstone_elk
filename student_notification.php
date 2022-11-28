@@ -8,8 +8,8 @@
                 <?php include('navbar_student.php'); ?>
             </header>
             <main class="dash-content">
-				<h1>My Notification</h1>
                 <div class="container-fluid">
+                    <h1>My Notification</h1>
                     <div class="row">
 					<?php
 						$school_year_query = mysqli_query($conn,"select * from school_year order by school_year DESC")or die(mysqli_error());
@@ -20,7 +20,7 @@
 							<div class="card">
 								<div class="card-body">
                                 <form action="read.php" method="post">
-						<?php if($not_read == '0'){
+						<?php if($not_read =='0'){
 								}else{ ?>
 						<button id="delete"  class="btn btn-info" name="read"><i class="icon-check"></i> Read</button>
 							<div class="float-right">
@@ -68,10 +68,10 @@
 											<?php echo $row['subject_code']; ?> 
 									 
 											</a>
-										<hr>
                                             <div class="float-right">
                                                 <i class="fas fa-calendar-alt"></i>&nbsp;<?php echo $row['date_of_notification']; ?> 
                                             </div>
+                                            <hr>
                                         </div>
                                     <?php
                                     } }else{
