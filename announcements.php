@@ -6,11 +6,11 @@
 		<?php include('annoucement_link.php'); ?>
     <div class="dash-app">
             <header class="dash-toolbar ">
-				<?php include('navbar.php');?>
+			<?php include('navbar_teacher.php'); ?>
             </header>
             <main class="dash-content">
-				<h1>Add Announcements</h1>
-                <div class="container-fluid">
+				<div class="container-fluid">
+					<h1>Add Announcements</h1>
                     <div class="row">
                         <div class="col-lg-8" id=" ">
 							<div class="card">
@@ -18,7 +18,7 @@
 									<form method="post">
 										<textarea name="content" class="form-control"id="ckeditor_full"></textarea>
 										<br>
-										<button name="post" class="btn btn-primary"><i class="icon-check icon-large"></i> Post</button>
+										<button name="post" class="btn btn-primary"><i class="fas fa-check"></i> Post</button>
 									</form>
 								</div>
 									

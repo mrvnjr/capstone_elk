@@ -9,8 +9,8 @@
 				<?php include('navbar_student.php');?>
             </header>
             <main class="dash-content">
-				<h1>My Classmates</h1>
-                <div class="container-fluid">
+				<div class="container-fluid">
+					<h1>My Classmates</h1>
                     <div class="row">
                         <div class="col-lg-12" id=" ">
 							<div class="card">

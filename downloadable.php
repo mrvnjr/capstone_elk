@@ -6,7 +6,7 @@
 	<?php include('downloadable_link.php'); ?>    
     <div class="dash-app">
             <header class="dash-toolbar ">
-				<?php include('navbar.php');?>
+			<?php include('navbar_teacher.php'); ?>
             </header>
             <main class="dash-content">
                 <div class="container-fluid">
@@ -30,7 +30,7 @@
 												<div class="alert alert-primary"><i class="icon-info-sign"></i> Currently you did not upload any downloadable materials</div>
 										<?php	}else{?>   
 											<form action="copy_file.php" method="post">
-												<a data-toggle="modal" href="#user_delete" id="delete"  class="btn btn-info" name=""><i class="icon-file"></i> Copy Check item</a>
+												<a data-toggle="modal" href="#user_delete" id="delete"  class="btn btn-info" name=""><i class="fas fa-copy"></i> Copy Check item</a>
 													<table cellpadding="0" cellspacing="0" border="0" class="table" id="">
 														<?php include('move_to_school_year.php'); ?>
 														

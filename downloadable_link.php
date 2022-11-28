@@ -9,7 +9,7 @@
         
             <div class=""> 
                 <a href="dasboard_teacher.php" class="dash-nav-item text-white">
-                    <i class="fas fa-home"></i> Back
+                    <i class="fas fa-arrow-left"></i> Back
                 </a> 
             </div>
 			<div class=""> 
@@ -24,13 +24,13 @@
             </div> -->
             <div class="border-top bg-light">
                 <a href="downloadable.php<?php echo '?id='.$get_id; ?>"class="dash-nav-item text-success">
-                    <i class="fas fa-users"></i>Downloadables
+                    <i class="fas fa-file-alt"></i>Downloadables
                 </a>
             </div>
         
             <div class="border-top">
                 <a href="assignment.php<?php echo '?id='.$get_id; ?>"class="dash-nav-item text-white">
-                    <i class="fas fa-user-cog"></i>Assignments
+                    <i class="fas fa-file-alt"></i>Assignments
                 </a>
             </div>
             <div class="border-top ">
@@ -40,7 +40,7 @@
             </div>
             <div class="border-top ">
                 <a href="class_quiz.php<?php echo '?id='.$get_id; ?>"class="dash-nav-item text-white">
-                    <i class="fas fa-plus-circle"></i> Quiz
+                    <i class="fas fa-clipboard-list"></i> Quiz
                 </a>
             </div> 
 			<!--?php include('search_other_class.php'); ?-->	

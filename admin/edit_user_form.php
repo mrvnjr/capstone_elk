@@ -1,4 +1,4 @@
-<a href="admin_user.php" class="btn btn-success"><i class="fas fa-plus"></i> Add user</a>
+<a href="admin_user.php" class="btn btn-success mb-2"><i class="fas fa-plus"></i> Add user</a>
 
 <div class="card easion-card">
             <div class="card-header">
@@ -20,7 +20,7 @@
                       <input class="form-control" value="<?php echo $row['username']; ?>"  name="usrname" id="usrname" type="text" placeholder = "Username" required>
                       <div id="user_msg"></div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                       <button name="update" id="update" class="btn btn-success" ><i class="fas fa-edit"></i></button>
                       <a name="" id="" class="btn btn-success" href="admin_user.php" role="button">Cancel</a>
                     </div>

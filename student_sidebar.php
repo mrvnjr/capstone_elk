@@ -1,4 +1,6 @@
-<div class="dash-nav dash-nav-light bg-success">
+<div class="dash-nav dash-nav-dark bg-success">
+<?php include('count.php'); ?>
+
     <header class="">
         
 
@@ -20,6 +22,10 @@
             <div class="">
                 <a class="dash-nav-item text-white" href="student_notification.php"><i class="fas fa-info-circle">
 				</i>Notification
+                <?php if($not_read == '0'){
+				}else{ ?>
+					<span class="badge badge-pill badge-danger ml-3"><?php echo $not_read; ?></span>
+				<?php } ?>
 				
 				</a>
             </div>

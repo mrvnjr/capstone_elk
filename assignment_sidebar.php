@@ -25,7 +25,7 @@
                 <!--   <input type="text" name="desc" Placeholder="Description"  class="input" required> -->
         </div>
         <div class="form-group">
-            <button name="Upload" type="submit" value="Upload" class="btn btn-success form-control" /><i class="icon-upload-alt"></i>&nbsp;Upload</button>
+            <button name="Upload" type="submit" value="Upload" class="btn btn-success form-control" /><i class="fas fa-upload"></i>&nbsp;Upload</button>
 
         </div>
     </form>

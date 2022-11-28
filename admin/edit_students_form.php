@@ -1,5 +1,5 @@
  <!--update class section-->
-<a href="students.php" class="btn btn-success"><i class="fas fa-plus"></i> Add Section</a>
+<a href="students.php" class="btn btn-success mb-2"><i class="fas fa-plus"></i> Add Student</a>
 <div class="card easion-card">
             <div class="card-header">
                 <div class="easion-card-title"> Update Section</div>

@@ -7,7 +7,7 @@
 	<?php include('class_sidebar.php'); ?>
     <div class="dash-app">
             <header class="dash-toolbar ">
-                <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
+                <?php include ("navbar_teacher.php")?>
             </header>
             <main class="dash-content">
 					
@@ -15,8 +15,8 @@
                     <div class="row">
                         <div class="col-lg-12" id=" ">
 							<div class="mb-2">
-								<a href="add_student.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><i class="icon-plus-sign"></i> Add Student</a>
-								<a onclick="window.open('print_student.php<?php echo '?id='.$get_id; ?>')"  class="btn btn-success"><i class="icon-list"></i> Student List</a>
+								<a href="add_student.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><i class="fas fa-plus-circle"></i> Add Student</a>
+								<a onclick="window.open('print_student.php<?php echo '?id='.$get_id; ?>')"  class="btn btn-success text-white"><i class="fas fa-list-ul"></i> Student List</a>
 							</div>
 							<div class="card">
 								<div class="card-header">
@@ -38,7 +38,7 @@
 											?>
 											<li id="del<?php echo $id; ?>" class="m-1 card	">
 													<a href="#">
-															<img id="student_avatar_class" src ="../<?php echo $row['location'] ?>" width="124" height="140" class="img-polaroid">
+															<img id="student_avatar_class" src ="admin/<?php echo $row['location'] ?>" width="120" height="140" class="img-thumbnail">
 														<div>
 														<span>
 														<p><?php ?></p>
@@ -48,7 +48,7 @@
 													</a>
 													<p class="class"><?php echo $row['lastname'];?></p>
 													<p class="subject"><?php echo $row['firstname']; ?></p>
-													<a  href="#<?php echo $id; ?>" data-toggle="modal"><i class="icon-trash"></i> Remove</a>	
+													<a  href="#<?php echo $id; ?>" data-toggle="modal"><i class="fas fa-trash-alt"></i> Remove</a>	
 											</li>
 											<?php include("remove_student_modal.php"); ?>
 											<?php } ?>

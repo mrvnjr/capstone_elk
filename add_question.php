@@ -3,7 +3,7 @@
 <?php $get_id = $_GET['id']; ?>
 <body>
 <div class="dash">  
-	<?php include('downloadable_link.php'); ?>    
+	<?php include('quiz_sidebar_teacher.php'); ?>    
     <div class="dash-app">
             <header class="dash-toolbar ">
 				<?php include('navbar_teacher.php');?>
@@ -34,7 +34,7 @@
 										<div class="form-group">
 											<label  for="inputEmail">Question Type:</label>
 													
-												<select id="qtype" class="form-control" name="question_tpye" required>
+												<select id="qtype" name="question_tpye" class="form-control" required>
 													<option value=""></option>
 													<?php
 													$query_question = mysqli_query($conn,"select * from question_type")or die(mysqli_error());

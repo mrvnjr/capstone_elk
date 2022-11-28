@@ -1,4 +1,4 @@
-<a href="teachers.php" class="btn btn-success"><i class="fas fa-plus"></i> Add Teacher</a>
+<a href="teachers.php" class="btn btn-success mb-3"><i class="fas fa-plus"></i> Add Teacher</a>
 
 <div class="card easion-card">
             <div class="card-header">

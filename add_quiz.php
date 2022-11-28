@@ -6,7 +6,7 @@
 	<?php include('quiz_sidebar_teacher.php'); ?>   
     <div class="dash-app">
 		<header class="dash-toolbar ">
-			<?php include('navbar.php'); ?>     
+			<?php include('navbar_teacher.php'); ?>     
 		</header>
 		<main class="dash-content">
 			<div class="container-fluid">
@@ -59,6 +59,6 @@
 		</main> 	
     </div>
 </div>
-<?php include('script.php'); ?>
+<?php include('scripts.php'); ?>
 </body>
 </html>

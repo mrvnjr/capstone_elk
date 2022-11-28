@@ -20,7 +20,7 @@
 				</a>
 				<p class="class"><?php echo $row['class_name']; ?></p>
 				<p class="subject"><?php echo $row['subject_code']; ?></p>
-				<a href="#<?php echo $id; ?>" data-toggle="modal"><i class="icon-trash"></i> Remove</a>	
+					
 			</li>
 		<?php include("delete_class_modal.php"); ?>
 	<?php } }else{ ?>

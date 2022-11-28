@@ -34,7 +34,7 @@
 				</div>
 			</div>
 		</center>
-		<center>
+		<!-- <center>
 			<div class="">
 				<label>------------Or----------</label>
 				<div class="">
@@ -43,7 +43,7 @@
 					</div>
 				</div>
 			</div>
-		</center>
+		</center> -->
 		<center>
 			<div class="">
 				<label>------------Or----------</label>
@@ -51,7 +51,7 @@
 					<div class="">
 						<p>Share To:</p>
 						<div class="	">
-							<label>To:</label>
+							<!-- <label>To:</label> -->
 							<div >
 								<select name="teacher_id1"  class="form-control" required>
 									<option></option>

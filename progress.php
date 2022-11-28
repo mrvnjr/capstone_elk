@@ -16,8 +16,8 @@
 								<div class="card-header">
 									<div id="" class="muted float-right"><h4> Assignment Grade Progress</h4></div>
 								</div>
-								<div class="card-body">
-									<table cellpadding="0" cellspacing="0" border="0" class="table" id="">
+								<div class="card-body table-responsive">
+									<table cellpadding="0" cellspacing="0" border="0" class="table " id="">
 						
 										<thead>
 												<tr>
@@ -64,7 +64,7 @@
 								<div class="card-header">
 									<div id="" class="muted float-right"><h4> Practice Quiz Progress</h4></div>
 								</div>
-								<div class="card-body">
+								<div class="card-body table-responsive">
 									<table cellpadding="0" cellspacing="0" border="0" class="table" id="">
 										<thead>
 										        <tr>

@@ -10,8 +10,8 @@
             <!-- <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a> -->
             </header>
             <main class="dash-content">
-				<h1>My Assignment</h1>
                 <div class="container-fluid">
+                    <h1>My Assignment</h1>
                     <div class="row">
                         <div class="col-lg-12" id=" ">
 						<div class="card">
@@ -95,7 +95,7 @@
             </main> 	
     </div>
 </div>
-<?php include('script.php'); ?>
+<?php include('scripts.php'); ?>
 </body>
 
 <!-- ________________ -->

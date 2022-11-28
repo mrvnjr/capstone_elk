@@ -10,11 +10,11 @@
 	            <?php include('navbar_student.php'); ?>             
             </header>
             <main class="dash-content">
-				<h1>Announcement</h1>
-                <div class="container-fluid">
+				<div class="container-fluid">
+					<h1>Announcement</h1>
                     <div class="row">
                         <div class="col-lg-12" id=" ">
-						<div class="card">
+							<div class="card">
 								<div class="card-body">
 								    <?php
 								        $query_announcement = mysqli_query($conn,"select * from teacher_class_announcements
@@ -48,5 +48,5 @@
             </main> 	
     </div>
 </div>
-<?php include('script.php'); ?>
+<?php include('scripts.php'); ?>
 </body>
