@@ -18,7 +18,7 @@
                 <input type="text" name="desc" Placeholder="Description"  class="input form-control" required>    
             </div>
             <div class="form-group">
-                <button name="Upload" type="submit" value="Upload" class="btn btn-primary" /><i class="fas fa-file-upload"></i>&nbsp;Upload</button>
+                <button name="Upload" type="submit" value="Upload" class="btn btn-primary"><i class="fas fa-file-upload"></i>&nbsp;Upload</button>
             </div>
         </form>
     </div>
