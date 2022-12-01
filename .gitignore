@@ -1,1 +1,4 @@
 /vendor/
+dbConnector.php
+admin/dbcon.php
+dbcon.php

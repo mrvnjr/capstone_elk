@@ -8,10 +8,10 @@ var $link;
     public function __construct() {
         ob_start();
   // Get the main settings from the array we just loaded
-        $host = 'localhost';
-        $db = 'capstones';
-        $user = 'root';
-        $pass = '';
+        $host = 'ftp.aasmnhs.online';
+        $db = 'u488180748_55SMNHS';
+        $user = 'u488180748_55SMNHS';
+        $pass = '55SMNHSPass';
 
         // Connect to the database
         $this->link = mysqli_connect($host, $user, $pass,$db);
@@ -25,10 +25,10 @@ var $link;
 function DbConnector(){
 
         // Get the main settings from the array we just loaded
-        $host = 'localhost';
-        $db = 'capstones';
-        $user = 'root';
-        $pass = '';
+        $host = 'ftp.aasmnhs.online';
+        $db = 'u488180748_55SMNHS';
+        $user = 'u488180748_55SMNHS';
+        $pass = '55SMNHSPass';
 
         // Connect to the database
         $this->link = mysqli_connect($host, $user, $pass,$db);
