@@ -19,18 +19,18 @@
                 </a> 
             </div>
             <!-- <div class="border-top">
-                <a href="subject_overview.php<?php echo '?id='.$get_id; ?>"class="dash-nav-item text-white">
+                <a href="subject_overview.php<?php echo '?id='.$get_id;?>"class="dash-nav-item text-white">
                     <i class="fas fa-users"></i>Subject Overview
                 </a>
             </div> -->
             <div class="border-top ">
-                <a href="downloadable.php<?php echo '?id='.$get_id; ?>"class="dash-nav-item text-white">
+                <a href="downloadable.php<?php echo'?id='.$get_id;?>"class="dash-nav-item text-white">
                     <i class="fas fa-file-alt"></i>Downloadables
                 </a>
             </div>
         
             <div class="border-top">
-                <a href="assignment.php<?php echo '?id='.$get_id; ?>"class="dash-nav-item text-white">
+                <a href="assignment.php<?php echo'?id='.$get_id;?>"class="dash-nav-item text-white">
                     <i class="fas fa-file-alt"></i>Assignments
                 </a>
             </div>
