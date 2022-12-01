@@ -5,7 +5,10 @@
         </a>
     </header>
     <nav class="dash-nav-list bg-success">
-        
+		<div class="text-center">
+            <img src="./uploads/logo.png" style="width: 110px;" class="img-fluid" alt="...">
+              <h6 class="text-white font-weight-bold">AASMNHS E-LEARNING</h6> 
+        </div> 
             <div class="border-top"> 
 			<a class="dash-nav-item text-white" href="dashboard_student.php"><i class="fas fa-arrow-alt-circle-left">
 				</i>Back
