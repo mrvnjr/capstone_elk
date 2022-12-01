@@ -13,13 +13,13 @@
             </div>
 
             <div class="border-top">
-                <a class="dash-nav-item text-white" href="my_classmates.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-users">
+                <a class="dash-nav-item text-white" href="my_classmates.php<?php echo '?id='.$get_id; ?>"><i class="fas fa-users">
 				</i>My Classmates		
 				</a>
             </div>
 
 			<div class="border-top">
-                <a class="dash-nav-item text-white" href="progress.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-sort-amount-up">
+                <a class="dash-nav-item text-white" href="progress.php<?php echo '?id='.$get_id; ?>"><i class="fas fa-sort-amount-up">
 				</i>My progress	
 				</a>
             </div>
@@ -37,19 +37,19 @@
             </div>
 
 			<div class="border-top">
-                <a class="dash-nav-item text-white" href="assignment_student.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-plus-circle">
+                <a class="dash-nav-item text-white" href="assignment_student.php<?php echo '?id='.$get_id; ?>"><i class="fas fa-plus-circle">
 				</i>Assignment
 				</a>
             </div>
 
 			<div class="border-top">
-                <a class="dash-nav-item text-white" href="announcements_student.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-user-cog">
+                <a class="dash-nav-item text-white" href="announcements_student.php<?php echo '?id='.$get_id; ?>"><i class="fas fa-user-cog">
 				</i>Annoucement
 				</a>
             </div>
 
 			<div class="border-top">
-                <a class="dash-nav-item text-white" href="student_quiz_list.php <?php echo '?id='.$get_id; ?>"><i class="fas fa-plus-circle">
+                <a class="dash-nav-item text-white" href="student_quiz_list.php<?php echo '?id='.$get_id; ?>"><i class="fas fa-plus-circle">
 				</i>Quiz
 				</a>
             </div>
