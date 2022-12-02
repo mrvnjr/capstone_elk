@@ -1,9 +1,9 @@
 
 <?php
-$server = "localhost";
-$username = "root";
-$password = "";
-$dbname = "capstones";
+$server = "ftp.aasmnhs.online";
+$username = "u488180748_55SMNHS";
+$password = "55SMNHSPass";
+$dbname = "u488180748_55SMNHS";
 
 // Create connection
 try{

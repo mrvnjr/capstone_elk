@@ -6,7 +6,10 @@
         </a>
     </header>
     <nav class="dash-nav-list bg-success">
-
+            <div class="text-center">
+				<img src="./uploads/logo.png" style="width: 110px;" class="img-fluid" alt="...">
+				<h6 class="text-white font-weight-bold">AASMNHS E-LEARNING</h6> 
+			</div>
         
             <div class=""> 
                 <a href="dasboard_teacher.php" class="dash-nav-item text-white">
@@ -19,18 +22,18 @@
                 </a> 
             </div>
             <!-- <div class="border-top">
-                <a href="subject_overview.php<?php echo '?id='.$get_id;?>"class="dash-nav-item text-white">
+                <a href="subject_overview.php<?php echo '?id='.$get_id; ?>"class="dash-nav-item text-white">
                     <i class="fas fa-users"></i>Subject Overview
                 </a>
             </div> -->
             <div class="border-top ">
-                <a href="downloadable.php<?php echo'?id='.$get_id;?>"class="dash-nav-item text-white">
+                <a href="downloadable.php<?php echo '?id='.$get_id; ?>"class="dash-nav-item text-white">
                     <i class="fas fa-file-alt"></i>Downloadables
                 </a>
             </div>
         
             <div class="border-top">
-                <a href="assignment.php<?php echo'?id='.$get_id;?>"class="dash-nav-item text-white">
+                <a href="assignment.php<?php echo '?id='.$get_id; ?>"class="dash-nav-item text-white">
                     <i class="fas fa-file-alt"></i>Assignments
                 </a>
             </div>
