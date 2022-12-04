@@ -29,7 +29,7 @@
                                         <div class="">
                                         <form action="delete_teacher.php" method="post">
                                             <table class="table table-in-card" id="example">
-                                                <button data-toggle="modal" data-target="#teacher_delete" id="delete"  class="btn btn-danger" name=""><i class="fas fa-trash-alt"></i></button>
+                                                <a data-toggle="modal" href="#teacher_delete" id="delete"  class="btn btn-danger" name=""><i class="fas fa-trash-alt"></i></a>
                                                     <?php include('modal_delete.php'); ?>
                                                 <thead>
                                                     <tr>
