@@ -48,9 +48,9 @@
 									?>
 										<div class="post form-group"  id="del<?php echo $id; ?>">
 											<?php echo $row['content']; ?>		
-												<hr>			
 											
 											<strong><i class="fas fa-calendar-alt"></i> <?php echo $row['date']; ?></strong>
+											<hr>			
 											
 											<div class="float-right">
 												<a class="btn btn-link"  href="#<?php echo $id; ?>" data-toggle="modal" ><i class="fas fa-trash-alt"></i> </a>

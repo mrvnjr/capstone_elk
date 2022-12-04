@@ -21,7 +21,15 @@
 				<div class="form-group ">
 					<input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
 				</div>
+				<div class=form-group>
 
+					<center>
+						<div class="g-recaptcha" 
+							data-sitekey="6LdqTVMjAAAAACsinIDHkt0BTEPcqvjRK3hdP53Y">
+						
+						</div>
+						</center>
+				</div>
             <!-- Checkbox -->
             <!-- <div class="form-check d-flex justify-content-start mb-4">
               <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
@@ -68,7 +76,7 @@
 			</script>
 
 
-            <hr class="my-3">
+            <hr class="my-1">
 			<span>New to El-Klase?</span>
 			<span>Please Sign-Up</span>
 			<hr>	
