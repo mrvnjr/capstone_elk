@@ -6,7 +6,7 @@
     <?php $teacher_query= mysqli_query($conn,"select * from teacher where teacher_id = '$session_id'")or die(mysqli_error());
 	$row = mysqli_fetch_array($teacher_query);
 	?>
-    <a class="easion-logo text-success" href="#">Welcome <?php echo $row['firstname']; ?> to EL-Klase</a>
+    <a class="easion-logo text-success" href="#">Welcome <?php echo $row['firstname']." ".$row['lastname']; ?> to EL-Klase</a>
 <div class="tools">    
     <div class="dropdown tools-item">
     <a href="#" class="" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -16,6 +16,7 @@
 
     </a>
     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+        <p class="dropdown-item">Hi! <?php echo $row['firstname']." ".$row['lastname']; ?></p>
         <a class="dropdown-item" href="change_password_teacher.php">Change Password</a>
         <a class="dropdown-item" href="#myModal" data-toggle="modal">Change Avatar</a>
         <a class="dropdown-item" href="logout.php">Logout</a>

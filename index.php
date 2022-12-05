@@ -1,10 +1,18 @@
 <?php include("header.php")?>
+<style>
+@media only screen and (max-width: 500px) {
+.g-recaptcha {
+transform:scale(0.77);
+transform-origin:0 0;
+}
+}
+</style>
 <body class="vh-100">
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6 text-black">
 
-	  <div class="card mt-2" style="border-radius: 1rem;">
+	  <div class="card mt-1" style="border-radius: 1rem;">
           <div class="card-body text-center">
 			<div>
 				<img src="./uploads/logo.png"  class="w-25 vh-25 mb-2" alt="">
@@ -19,17 +27,15 @@
 				</div>
 
 				<div class="form-group ">
-					<input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+					<input type="password" class="form-control mb-1" id="password" name="password" placeholder="Password" required>
+				
 				</div>
-				<div class=form-group>
-
-					<center>
-						<div class="g-recaptcha" 
-							data-sitekey="6LdqTVMjAAAAACsinIDHkt0BTEPcqvjRK3hdP53Y">
-						
-						</div>
-						</center>
-				</div>
+				<center>
+					<div class="g-recaptcha" 
+						data-sitekey="6LdqTVMjAAAAACsinIDHkt0BTEPcqvjRK3hdP53Y" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;">
+					
+					</div>
+					</center>
             <!-- Checkbox -->
             <!-- <div class="form-check d-flex justify-content-start mb-4">
               <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
